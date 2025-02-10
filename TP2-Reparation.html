@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            margin-top: 80px; /* Pour éviter que la navbar fixe ne cache le contenu */
         }
 
         /* Header */
@@ -26,14 +27,18 @@
 
         /* Navbar */
         .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             background-color: #fff;
             padding: 15px 30px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            margin: 20px;
+            border-radius: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .logo {
@@ -58,6 +63,8 @@
             list-style: none;
             display: flex;
             gap: 20px;
+            padding: 0;
+            margin: 0;
         }
 
         .nav-links a {
@@ -78,7 +85,7 @@
         /* Bannière */
         .banner {
             position: relative;
-            background: url('img/auto (1).jpg') no-repeat center/cover;
+            background: url('img/sn_Mecaniciens.jpg') no-repeat center/cover;
             color: white;
             text-align: center;
             width: 100%;
@@ -99,13 +106,17 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
-        .banner h1{
-           font-size: 10vh;
-           font-family: fantasy ;
+
+        .banner h1 {
+            font-size: 10vh;
+            font-family: fantasy;
+            position: relative;
+            z-index: 2;
         }
 
-        .banner h1,
         .banner p {
+            font-size: 5vh;
+            margin-top: 5px;
             position: relative;
             z-index: 2;
         }
@@ -147,7 +158,7 @@
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(28, 44, 78, 0.2);
             text-align: center;
             width: 250px;
         }
@@ -208,9 +219,9 @@
 
         <ul class="nav-links">
             <li><a href="#">Accueil</a></li>
-            <li><a href="Mecanicien">Mécanicien</a></li>
-            <li><a href="Cliens">Client</a></li>
-            <li><a href="Reparation">En réparation</a></li>
+            <li><a href="TP2-Mecanicien.html">Mécanicien</a></li>
+            <li><a href="TP2-Client.html">Client</a></li>
+            <li><a href="TP2-Reparation.html">En réparation</a></li>
             <li><a href="Inscription">Inscription</a></li>
         </ul>
     </nav>
@@ -218,7 +229,7 @@
     <!-- Bannière -->
     <section class="banner">
         <h1>Bienvenue chez Garage Sope Naby</h1>
-        <p>Votre expert en réparation automobile, rapide et fiable !</p> 
+        <p>Votre expert en réparation automobile, rapide et fiable !</p>
     </section>
 
     <!-- Présentation du garage -->
@@ -227,7 +238,7 @@
         <div class="about-text">
             <h2>À propos de notre garage</h2>
             <p>Garage Sope Naby est spécialisé dans la réparation et l'entretien automobile depuis plus de 10 ans.
-            Quelques soient vos problemes <strong>Automobile voire Customisation</strong>, notre garage est le lieu <em>ideal pour vous satisfaire.</em>
+                Quelques soient vos problèmes <strong>Automobile voire Customisation</strong>, notre garage est le lieu <em>idéal pour vous satisfaire.</em>
             </p>
         </div>
     </section>
@@ -246,43 +257,13 @@
                 <h3>Leila Dasouza</h3>
                 <p>Spécialiste carrosserie</p>
             </div>
-            <div class="team-card">
-                <img src="img/act (4).jpg" alt="Mécanicien 2">
-                <h3>Awa Ba</h3>
-                <p>Spécialiste carrosserie</p>
-            </div>
-            <div class="team-card">
-                <img src="img/femme.jpg" alt="Mécanicien 2">
-                <h3>Aissata DIA</h3>
-                <p>Spécialiste carrosserie</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Avis Clients -->
-    <section class="testimonials">
-        <h2>Avis de nos clients</h2>
-        <div class="testimonial">
-            <img src="img/client1.jpg" alt="Client 1">
-            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
-            <strong>- Drisstein .</strong>
-        </div>
-        <div class="testimonial">
-            <img src="img/client1.jpg" alt="Client 1">
-            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
-            <strong>- Mr GUEYE.</strong>
-        </div>
-        <div class="testimonial">
-            <img src="img/client1.jpg" alt="Client 1">
-            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
-            <strong>- Ngagne FALL.</strong>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>📍 Adresse : UADB,Bambey, Sénégal | 📞 Téléphone : +221 77 123 45 67 | 📧 Email : contact@sope-naby.com</p>
-        <p>&COPYCopyright 2025, All rights reserved by Drisstein/></p>
+        <p>📍 Adresse : UADB, Bambey, Sénégal | 📞 Téléphone : +221 77 123 45 67 | 📧 Email : contact@sope-naby.com</p>
+        <p>&COPY; 2025, All rights reserved by Drisstein</p>
     </footer>
 
 </body>
