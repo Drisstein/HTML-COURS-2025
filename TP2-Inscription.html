@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Sope Naby - Accueil</title>
+
+    <style>
+        /* Style global */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: rgb(55, 25, 163);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border-bottom: 3px solid rgb(67, 193, 39);
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 15px 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .logo h2 {
+            font-size: 22px;
+            color: rgb(55, 25, 163);
+            margin: 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: rgb(77, 28, 191);
+            color: white;
+        }
+
+        /* Bannière */
+        .banner {
+            position: relative;
+            background: url('img/auto (1).jpg') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .banner h1{
+           font-size: 10vh;
+           font-family: fantasy ;
+        }
+
+        .banner h1,
+        .banner p {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Présentation du garage */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background: white;
+        }
+
+        .about img {
+            width: 45%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .about-text {
+            width: 50%;
+        }
+
+        /* Présentation des mécaniciens */
+        .team-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 250px;
+        }
+
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Avis Clients */
+        .testimonials {
+            padding: 50px 20px;
+            text-align: center;
+            background: #e3f2fd;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .testimonial img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: rgb(55, 25, 163);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>G A R A G E<br>SOPE NABY</h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/auto (2).jpg" alt="Logo du Garage">
+            <h2>Garage Sope Naby</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="Mecanicien">Mécanicien</a></li>
+            <li><a href="Cliens">Client</a></li>
+            <li><a href="Reparation">En réparation</a></li>
+            <li><a href="Inscription">Inscription</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bannière -->
+    <section class="banner">
+        <h1>Bienvenue chez Garage Sope Naby</h1>
+        <p>Votre expert en réparation automobile, rapide et fiable !</p> 
+    </section>
+
+    <!-- Présentation du garage -->
+    <section class="about">
+        <img src="img/auto (4).jpg" alt="Garage Sope Naby">
+        <div class="about-text">
+            <h2>À propos de notre garage</h2>
+            <p>Garage Sope Naby est spécialisé dans la réparation et l'entretien automobile depuis plus de 10 ans.
+            Quelques soient vos problemes <strong>Automobile voire Customisation</strong>, notre garage est le lieu <em>ideal pour vous satisfaire.</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Présentation des mécaniciens -->
+    <section class="team-section">
+        <h2>Nos Mécaniciens</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="img/act (2).jpg" alt="Mécanicien 1">
+                <h3>Aliou Diop</h3>
+                <p>Spécialiste moteur</p>
+            </div>
+            <div class="team-card">
+                <img src="img/act (3).jpg" alt="Mécanicien 2">
+                <h3>Leila Dasouza</h3>
+                <p>Spécialiste carrosserie</p>
+            </div>
+            <div class="team-card">
+                <img src="img/act (4).jpg" alt="Mécanicien 2">
+                <h3>Awa Ba</h3>
+                <p>Spécialiste carrosserie</p>
+            </div>
+            <div class="team-card">
+                <img src="img/femme.jpg" alt="Mécanicien 2">
+                <h3>Aissata DIA</h3>
+                <p>Spécialiste carrosserie</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avis Clients -->
+    <section class="testimonials">
+        <h2>Avis de nos clients</h2>
+        <div class="testimonial">
+            <img src="img/client1.jpg" alt="Client 1">
+            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
+            <strong>- Drisstein .</strong>
+        </div>
+        <div class="testimonial">
+            <img src="img/client1.jpg" alt="Client 1">
+            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
+            <strong>- Mr GUEYE.</strong>
+        </div>
+        <div class="testimonial">
+            <img src="img/client1.jpg" alt="Client 1">
+            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
+            <strong>- Ngagne FALL.</strong>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>📍 Adresse : UADB,Bambey, Sénégal | 📞 Téléphone : +221 77 123 45 67 | 📧 Email : contact@sope-naby.com</p>
+        <p>&COPYCopyright 2025, All rights reserved by Drisstein/></p>
+    </footer>
+
+</body>
+</html>
