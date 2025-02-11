@@ -13,7 +13,6 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            margin-top: 80px; /* Pour éviter que la navbar fixe ne cache le contenu */
         }
 
         /* Header */
@@ -27,18 +26,15 @@
 
         /* Navbar */
         .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #fff;
-            padding: 15px 30px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 0;
-            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background-color: #fff;
+            padding: 15px 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 10px;
+            position: fixed top;
         }
 
         .logo {
@@ -63,8 +59,6 @@
             list-style: none;
             display: flex;
             gap: 20px;
-            padding: 0;
-            margin: 0;
         }
 
         .nav-links a {
@@ -110,13 +104,10 @@
         .banner h1 {
             font-size: 10vh;
             font-family: fantasy;
-            position: relative;
-            z-index: 2;
         }
 
+        .banner h1,
         .banner p {
-            font-size: 5vh;
-            margin-top: 5px;
             position: relative;
             z-index: 2;
         }
@@ -164,9 +155,9 @@
         }
 
         .team-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border-radius: 20%;
             object-fit: cover;
         }
 
@@ -175,6 +166,7 @@
             padding: 50px 20px;
             text-align: center;
             background: #e3f2fd;
+            height: 100vh;
         }
 
         .testimonial {
@@ -187,8 +179,8 @@
         }
 
         .testimonial img {
-            width: 60px;
-            height: 60px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 10px;
@@ -200,7 +192,7 @@
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 30px;
+            /* margin-top: px; */
         }
     </style>
 </head>
@@ -208,7 +200,8 @@
 <body>
 
     <header>
-        <h1>G A R A G E<br>SOPE NABY</h1>
+        <h1 style="font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            GARAGE<br><em>SOPE NABY</em></h1>
     </header>
 
     <nav class="navbar">
@@ -218,18 +211,18 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#">Accueil</a></li>
+            <li><a href="TP2-Accueil.html">Accueil</a></li>
             <li><a href="TP2-Mecanicien.html">Mécanicien</a></li>
             <li><a href="TP2-Client.html">Client</a></li>
             <li><a href="TP2-Reparation.html">En réparation</a></li>
-            <li><a href="Inscription">Inscription</a></li>
+            <li><a href="TP2-Inscription.html">Inscription</a></li>
         </ul>
     </nav>
 
     <!-- Bannière -->
     <section class="banner">
         <h1>Bienvenue chez Garage Sope Naby</h1>
-        <p>Votre expert en réparation automobile, rapide et fiable !</p>
+        <p style="font-size: 5vh; margin-top: 5px;">Votre expert en réparation automobile, rapide et fiable !</p>
     </section>
 
     <!-- Présentation du garage -->
@@ -238,7 +231,8 @@
         <div class="about-text">
             <h2>À propos de notre garage</h2>
             <p>Garage Sope Naby est spécialisé dans la réparation et l'entretien automobile depuis plus de 10 ans.
-                Quelques soient vos problèmes <strong>Automobile voire Customisation</strong>, notre garage est le lieu <em>idéal pour vous satisfaire.</em>
+                Quelques soient vos problemes <strong>Automobile voire Customisation</strong>, notre garage est le lieu
+                <em>ideal pour vous satisfaire.</em>
             </p>
         </div>
     </section>
@@ -257,14 +251,50 @@
                 <h3>Leila Dasouza</h3>
                 <p>Spécialiste carrosserie</p>
             </div>
+            <div class="team-card">
+                <img src="img/mec (3).jpg" alt="Mécanicien 2">
+                <h3>Awa Ba</h3>
+                <p>Spécialiste carrosserie</p>
+            </div>
+            <!-- <div class="team-card">
+                <img src="img/femme.jpg" alt="Mécanicien 2">
+                <h3>Aissata DIA</h3>
+                <p>Spécialiste carrosserie</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Avis Clients -->
+    <section class="testimonials">
+        <h2>Avis de nos clients</h2>
+        <div class="testimonial">
+            <img src="img/mec (3).jpg" alt="Client 1">
+            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
+            <strong>- Drisstein .</strong>
+        </div>
+        <div class="testimonial">
+            <img src="img/auto (3).jpg" alt="Client 1">
+            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
+            <strong>- Mr GUEYE.</strong>
+        </div>
+        <div class="testimonial">
+            <img src="img/auto (4).jpg" alt="Client 1">
+            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
+            <strong>- Ngagne FALL.</strong>
+        </div>
+        <div class="testimonial">
+            <img src="img/auto (6).jpg" alt="Client 1">
+            <p>"Super service ! Mon véhicule a été réparé en un temps record."</p>
+            <strong>- Aicha FALL.</strong>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>📍 Adresse : UADB, Bambey, Sénégal | 📞 Téléphone : +221 77 123 45 67 | 📧 Email : contact@sope-naby.com</p>
-        <p>&COPY; 2025, All rights reserved by Drisstein</p>
+        <p>📍 Adresse : UADB,Bambey, Sénégal | 📞 Téléphone : +221 77 123 45 67 | 📧 Email : contact@sope-naby.com</p>
+        <p>&COPYCopyright 2025, All rights reserved by Drisstein/></p>
     </footer>
 
 </body>
+
 </html>
