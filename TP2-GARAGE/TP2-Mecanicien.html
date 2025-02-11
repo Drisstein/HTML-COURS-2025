@@ -13,10 +13,11 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            margin-top: 80px; /* Pour éviter que la navbar fixe ne cache le contenu */
+            margin-top: 80px;
+            /* Pour éviter que la navbar fixe ne cache le contenu */
+            padding-top: 80px;
         }
 
-        /* Navbar */
         .navbar {
             display: flex;
             align-items: center;
@@ -25,8 +26,34 @@
             padding: 15px 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            margin: 10px;
-            position: fixed top;
+            position: fixed;
+            /* Fixe la navbar en haut */
+            top: 0;
+            /* La place en haut de la page */
+            left: 0;
+            width: 100%;
+            /* Assure qu'elle s'étend sur toute la largeur */
+            z-index: 1000;
+            /* Garde la navbar au-dessus des autres éléments */
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .logo h2 {
+            font-size: 22px;
+            color: rgb(55, 25, 163);
+            margin: 0;
         }
 
         .nav-links {
@@ -73,7 +100,8 @@
             margin-top: 20px;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;
@@ -164,4 +192,5 @@
     </footer>
 
 </body>
+
 </html>
