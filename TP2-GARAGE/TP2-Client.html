@@ -13,7 +13,8 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            margin-top: 80px; /* Pour éviter que la navbar fixe ne cache le contenu */
+            margin-top: 80px;
+            /* Pour éviter que la navbar fixe ne cache le contenu */
         }
 
         /* Header */
@@ -82,45 +83,6 @@
             color: white;
         }
 
-        /* Bannière */
-        .banner {
-            position: relative;
-            background: url('img/sn_Mecaniciens.jpg') no-repeat center/cover;
-            color: white;
-            text-align: center;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .banner::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .banner h1 {
-            font-size: 10vh;
-            font-family: fantasy;
-            position: relative;
-            z-index: 2;
-        }
-
-        .banner p {
-            font-size: 5vh;
-            margin-top: 5px;
-            position: relative;
-            z-index: 2;
-        }
-
         /* Présentation du garage */
         .about {
             display: flex;
@@ -145,6 +107,7 @@
         .team-section {
             text-align: center;
             padding: 50px 20px;
+            
         }
 
         .team-container {
@@ -207,9 +170,6 @@
 
 <body>
 
-    <header>
-        <h1>G A R A G E<br>SOPE NABY</h1>
-    </header>
 
     <nav class="navbar">
         <div class="logo">
@@ -226,26 +186,9 @@
         </ul>
     </nav>
 
-    <!-- Bannière -->
-    <section class="banner">
-        <h1>Bienvenue chez Garage Sope Naby</h1>
-        <p>Votre expert en réparation automobile, rapide et fiable !</p>
-    </section>
-
-    <!-- Présentation du garage -->
-    <section class="about">
-        <img src="img/auto (4).jpg" alt="Garage Sope Naby">
-        <div class="about-text">
-            <h2>À propos de notre garage</h2>
-            <p>Garage Sope Naby est spécialisé dans la réparation et l'entretien automobile depuis plus de 10 ans.
-                Quelques soient vos problèmes <strong>Automobile voire Customisation</strong>, notre garage est le lieu <em>idéal pour vous satisfaire.</em>
-            </p>
-        </div>
-    </section>
-
     <!-- Présentation des mécaniciens -->
     <section class="team-section">
-        <h2>Nos Mécaniciens</h2>
+        <h2>Nos clients sont satisfaits</h2>
         <div class="team-container">
             <div class="team-card">
                 <img src="img/act (2).jpg" alt="Mécanicien 1">
@@ -254,6 +197,26 @@
             </div>
             <div class="team-card">
                 <img src="img/act (3).jpg" alt="Mécanicien 2">
+                <h3>Leila Dasouza</h3>
+                <p>Spécialiste carrosserie</p>
+            </div>
+            <div class="team-card">
+                <img src="img/act (3).jpg" alt="Mécanicien 3">
+                <h3>Leila Dasouza</h3>
+                <p>Spécialiste carrosserie</p>
+            </div>
+            <div class="team-card">
+                <img src="img/act (3).jpg" alt="Mécanicien 4">
+                <h3>Leila Dasouza</h3>
+                <p>Spécialiste carrosserie</p>
+            </div>
+            <div class="team-card">
+                <img src="img/act (3).jpg" alt="Mécanicien 5">
+                <h3>Leila Dasouza</h3>
+                <p>Spécialiste carrosserie</p>
+            </div>
+            <div class="team-card">
+                <img src="img/act (3).jpg" alt="Mécanicien 6">
                 <h3>Leila Dasouza</h3>
                 <p>Spécialiste carrosserie</p>
             </div>
@@ -267,4 +230,5 @@
     </footer>
 
 </body>
+
 </html>
